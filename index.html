@@ -1,1 +1,151 @@
-wangzhidan
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>王志丹的demo</title>
+	<!-- 
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.bootcss.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
+	 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/scojs.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+    <!--[if lt IE 9]>
+    <script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script>
+    <![endif]-->
+
+   
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+	
+	<!--nav start-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">项目地址</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">HTML5 study</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">首页</a></li>
+              <li><a href="#about">关于我</a></li>
+              <li><a href="#contact">联系我</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">项目地址 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://www.elitetech.com.cn/">北京艾立特科技有限公司</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <!--nav end-->
+		
+	<div class="content container">
+	  <div class="alert alert-success bounce animated">
+        <strong>congratulation!!</strong> welcome to 王志丹 new project.
+      </div>
+	</div>
+	
+	<div class="container" id="skill">
+		<div class="page-header">
+	        <h1>专业技能</h1>
+	    </div>
+	    <div class="well">
+	        <p>1、熟练使用ps切图片</p>
+	        <p>2、熟练使用Dreamweaver、sublime编写DIV+CSS。</p>
+	        <p>3、熟悉js/jQuery代码，可以简单修改。</p>
+	        <p>4、了解浏览器之间差别。熟练应用hack调整各浏览器的兼容性。</p>
+	        <p>5、熟悉HTML5新增标签，和css3的新特性。</p>
+	        <p>6、熟练使用chrome开发人员工具，firebug 调试。</p>
+	        <p>作品：http://www.elitetech.com.cn/（兼容 IE6-IE11,chrome,firefox)</p>
+	    </div>
+	</div>
+
+	<div class="container">
+		<div class="page-header">
+	        <h1><span>项目介绍</span></h1>
+	    </div>
+
+		<div class="row">
+	        <div class="">
+	          <div class="panel panel-default">
+	            <div class="panel-heading">
+	              <h3 class="panel-title">北京艾立特科技有限公司</h3>
+	            </div>
+	            <div class="panel-body">
+	              <p>熟练使用Dreamweaver 编写DIV+CSS</p>
+                  <p>实现公司的网站制作,公司网址：http://www.elitetech.com.cn/</p>
+				  <p>兼容IE6-IE11、chrome、firefox、opera浏览器</p>
+                  <p>熟练使用Photoshop软件处理公司产品图片，并负责公司网站的维护</p>
+	            </div>
+	          </div>
+	          
+	        </div><!-- /.col-sm-4 -->
+	        
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/sco.modal.js"></script>
+	
+	<script type="text/javascript">
+
+	$(function(){
+
+		$(".page-header h1").css("width","200px")
+		$(".page-header h1").on("click",function(){
+
+			$(this).addClass("tada animated");
+
+			var $this = $(this);
+
+			setTimeout(function(){
+
+				$this.removeClass("tada animated");
+
+			}, 3000);
+		})
+
+
+		setTimeout(function(){
+
+			$("#skill").addClass("bounceIn animated");
+
+		}, 1000);
+
+		setTimeout(function(){
+
+			$(".col-sm-6").addClass("bounceIn animated");
+
+		}, 4000);
+
+	})
+
+	</script>
+
+	
+
+
+</body>
+</html>
